@@ -1,0 +1,22 @@
+explore_node:
+  ros__parameters:
+    # 探索半径（米），负数表示无限制
+    exploration_radius: -1.0
+    
+    # 前沿点聚类距离阈值（米）
+    frontier_distance_threshold: 0.5
+    
+    # 最小前沿点数量
+    min_frontier_size: 20
+    
+    # 目标超时时间（秒）
+    goal_timeout: 60.0
+    
+    # 更新频率（Hz）
+    update_frequency: 1.0
+    
+    # 话题名称
+    map_topic: "/map"
+    robot_base_frame: "base_footprint"
+    map_frame: "map"
+
