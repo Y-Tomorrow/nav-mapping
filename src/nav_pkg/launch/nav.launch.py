@@ -29,7 +29,9 @@ def generate_launch_description():
         launch_arguments={
             'map': map_file,
             'use_sim_time': 'True',
-            'params_file': nav_param_file}.items(),
+            'params_file': nav_param_file,
+            'autostart': 'True'
+        }.items(),
     )
 
     rviz_file = os.path.join(get_package_share_directory('wpr_simulation2'), 'rviz', 'navi.rviz')
